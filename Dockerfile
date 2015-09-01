@@ -15,6 +15,6 @@ RUN cd /usr/local && \
     find . -name .git | xargs rm -rf && \
     mkdir -p /srv/go/src
 
-ENTRYPOINT ["/usr/local/go${GOVERSION}/bin/go"]
+ENTRYPOINT ["go"]
 CMD ["version"]
 
