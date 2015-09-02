@@ -1,6 +1,6 @@
 FROM mckee/armhf-ubuntu-core:vivid
 
-ENV GOVERSION=1.5 GOPATH=/srv/go
+ENV GOVERSION=1.4.2 GOPATH=/srv/go
 RUN apt-get update && \
     apt-get dist-upgrade -y && \
     apt-get install -y git build-essential gccgo-5 && \
